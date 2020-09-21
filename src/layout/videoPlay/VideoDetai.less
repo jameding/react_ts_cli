@@ -1,0 +1,144 @@
+.video-detail-page {
+	background-color: #1c2433;
+	padding-top: 80px;
+	.lesson-video-box {
+		position: relative;
+
+		background: rgba(0, 0, 0, 0.2);
+		height: 533px;
+		.video-box {
+			position: absolute;
+			width: 880px;
+			.video-play {
+				height: 493px;
+				border: 1px solid blue;
+			}
+			.video-info {
+				height: 40px;
+				line-height: 40px;
+				color: #a2acbe;
+				padding: 0 10px;
+				span {
+					margin-left: 20px;
+				}
+			}
+		}
+		.lesson-select {
+			margin-left: 880px;
+			padding: 0 20px;
+			padding-top: 125px;
+			position: relative;
+			&.already-buy {
+				padding-top: 55px;
+			}
+			.lesson-video-name {
+				top: 0;
+				left: 0;
+				height: 55px;
+				padding: 10px 20px 20px;
+				font-size: 18px;
+				line-height: 25px;
+				color: #fff;
+				position: absolute;
+			}
+			.lesson-video-buy {
+				padding: 0 20px;
+				left: 0;
+				position: absolute;
+				top: 55px;
+				padding-bottom: 20px;
+				.lesson-price {
+					color: #e9ce87;
+					span {
+						&:first-child {
+							font-size: 16px;
+							line-height: 50px;
+						}
+						&:last-child {
+							font-size: 24px;
+							line-height: 50px;
+						}
+					}
+				}
+				.lesson-buy-button {
+					width: 140px;
+					height: 50px;
+					border-radius: 25px;
+					background: linear-gradient(360deg, #eace88 0%, #b89352 100%);
+					line-height: 50px;
+					color: #fff;
+					font-size: 17px;
+					line-height: 50px;
+				}
+			}
+			// 选集列表
+			.lesson-list {
+				overflow-y: scroll;
+				.lession-item {
+					position: relative;
+					height: 50px;
+					background-color: #293140;
+					border-radius: 5px;
+					margin-bottom: 10px;
+					color: #a2acbe;
+					&.free {
+						.buy-icon {
+							display: none;
+						}
+					}
+					&.buy {
+						.free-icon {
+							display: none;
+						}
+					}
+					&.play {
+						.lession-item-info {
+							.lesson-play {
+								display: inline;
+							}
+						}
+						color: #0cccbd !important;
+					}
+					.free-buy-icon {
+						position: absolute;
+						top: 0;
+						right: 0;
+						width: 26px;
+					}
+					.lession-item-info {
+						height: 20px;
+						position: absolute;
+						top: 50%;
+						margin-top: -10px;
+						left: 20px;
+						right: 20px;
+						.lesson-num {
+							font-size: 12px;
+							line-height: 20px;
+							margin-right: 6px;
+						}
+						.lesson-name {
+							font-size: 14px;
+							line-height: 20px;
+						}
+						.lesson-play {
+							height: 12px;
+							margin-right: 6px;
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.lesson-title-name {
+		height: 76px;
+		line-height: 76px;
+		font-size: 25px;
+		line-height: 36px;
+		color: #fff;
+		.name {
+			color: #a2acbe;
+		}
+	}
+}

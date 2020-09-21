@@ -1,14 +1,29 @@
+//基础的antd样式文件
+@import '~antd/dist/antd.css';
 //基础的reset样式文件
 @import './reset';
 //公共基础样式文件
 @import './public';
 
 //页面结构外层样式
-html,
 body,
-#root {
+html {
+	min-width: 1200px;
 }
-
+.contaner {
+	width: 1200px;
+	margin: auto;
+}
+.font-20-28 {
+	font-size: 20px;
+	line-height: 28px;
+	color: #333;
+}
+.font-14-20 {
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+}
 .font-wei {
 	font-weight: 500;
 }
@@ -48,6 +63,9 @@ body,
 .mb30 {
 	margin-bottom: 30px;
 }
+.mb50 {
+	margin-bottom: 50px;
+}
 .wh30 {
 	width: 30px;
 	height: 30px;
@@ -66,4 +84,23 @@ body,
 }
 .border {
 	border: 1px solid red;
+}
+.button {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	border-radius: 5px;
+}
+// 全局默认蓝色按钮
+.button-primary {
+	background-color: #307bfe;
+	&:hover,
+	&:focus {
+		background-color: #669dfe;
+	}
+	&:active {
+		background-color: #2763cc;
+	}
 }

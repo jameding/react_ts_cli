@@ -6,14 +6,11 @@ import './style/main.less';
 import * as serviceWorker from './serviceWorker';
 import RouterConfig from './router/index';
 import store from './redux/store/index';
-// console.log(process.env);
 
 ReactDOM.render(
-	<React.StrictMode>
-		<Provider store={store}>
-			<RouterConfig />
-		</Provider>
-	</React.StrictMode>,
+	<Provider store={store}>
+		<RouterConfig />
+	</Provider>,
 	// <React.StrictMode>
 	// 	<App />
 	// </React.StrictMode>,
